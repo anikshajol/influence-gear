@@ -180,12 +180,40 @@ nav ul li {
   margin-bottom: 100px;
 }
 
-.featured-content button {
-  border-radius: 0;
-}
-
 .featured-content p {
   margin: 10px 0;
   color: #6c6c6c;
   font-weight: 700;
+}
+
+.featured-content button {
+  border-radius: 0;
+}
+
+/* footer */
+
+footer {
+  background: #0a0826;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .title {
+  color: #fff;
+}
+
+footer .description {
+  color: #d9dbe1;
+
+  font-size: 0.89rem;
+
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+footer .icon {
+  color: #d9dbe1;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }

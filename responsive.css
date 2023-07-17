@@ -14,7 +14,8 @@
     padding-top: 20px;
   }
 
-  .banner-container {
+  .banner-container,
+  .featured-container {
     flex-direction: column-reverse;
     gap: 10px;
     text-align: center;
@@ -29,6 +30,10 @@
   .popular-section-title {
     text-align: center;
   }
+
+  .featured-image {
+    transform: scale(0.9);
+  }
 }
 
 /* medium device */
@@ -39,7 +44,8 @@
     justify-content: center;
     gap: 30px;
   }
-  .banner-container {
+  .banner-container,
+  .featured-container {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -49,5 +55,11 @@
   }
   .popular-card-container {
     grid-template-columns: 1fr 1fr;
+  }
+  .featured-container {
+    gap: 10px;
+  }
+  .featured-image {
+    width: 100%;
   }
 }
