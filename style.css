@@ -123,6 +123,10 @@ nav ul li {
   margin-bottom: 30px;
 }
 
+.popular-section-title {
+  text-align: center;
+}
+
 /* card  */
 .popular-card-container {
   display: grid;
