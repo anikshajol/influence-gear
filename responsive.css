@@ -22,14 +22,32 @@
   .banner-title {
     font-size: 2rem;
   }
+
+  .popular-card-container {
+    grid-template-columns: 1fr;
+  }
+  .popular-section-title {
+    text-align: center;
+  }
 }
 
 /* medium device */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
   .banner-container {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+  }
+  .popular-section-title {
+    text-align: center;
+  }
+  .popular-card-container {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -19,6 +19,11 @@
   --gray-50: #787885;
 }
 
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
 .btn-primary {
   border-radius: 41px;
   background: #e02c6d;
@@ -41,8 +46,6 @@
 /* header styles */
 
 header {
-  max-width: 80vw;
-  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -92,6 +95,97 @@ nav ul li {
   max-width: 100%;
 }
 
-.hide {
-  display: none;
+/* main area styles */
+
+/* branding image */
+
+.branding {
+  border: 1px solid gray;
+  border-right: 0;
+  border-left: 0;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 50px;
+}
+
+/* popular section */
+.popular {
+  margin-bottom: 100px;
+}
+
+.popular .title {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* card  */
+.popular-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 17px;
+  width: 330px;
+}
+
+.fa-star {
+  color: gold;
+}
+
+.price {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+
+.review {
+  color: #5e6366;
+}
+.card .description {
+  color: var(--gray-50);
+  font-size: 0.89rem;
+}
+.card-body .title {
+  margin-bottom: 0;
+}
+
+.see-more-btn {
+  margin-top: 50px;
+  text-align: end;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.see-more-btn a {
+  color: rgba(224, 44, 109, 0.87);
+  text-decoration: none;
+}
+
+/* featured */
+
+.featured-container {
+  display: flex;
+  gap: 96px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.featured-content button {
+  border-radius: 0;
+}
+
+.featured-content p {
+  margin: 10px 0;
+  color: #6c6c6c;
+  font-weight: 700;
 }
