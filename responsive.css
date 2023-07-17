@@ -57,6 +57,7 @@
   }
   .popular-card-container {
     grid-template-columns: 1fr 1fr;
+    place-content: center;
   }
   .featured-container {
     gap: 10px;
