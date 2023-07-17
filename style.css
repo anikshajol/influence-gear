@@ -15,7 +15,6 @@
   --primary-color: #3a3a3a;
   --btn-color: #e02c6d;
   --section-description: 1rem;
-  --card-description: 0.87rem;
   --text-gray-900: #18191f;
   --gray-50: #787885;
 }
@@ -24,19 +23,27 @@
   border-radius: 41px;
   background: #e02c6d;
   padding: 10px 24px;
+  border: 0;
+  color: white;
+  font-weight: 700;
 }
 
-title {
+.title {
   color: --primary-color;
   font-size: 1.5rem;
   font-weight: 700;
 }
-
+.description {
+  color: var(--primary-color);
+  font-size: var(--section-description);
+  font-weight: 600;
+}
 /* header styles */
 
 header {
   max-width: 80vw;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 /* nav styles */
@@ -58,4 +65,33 @@ nav ul li {
   color: var(--primary-color);
   font-size: var(--section-description);
   font-weight: 600;
+}
+
+/* banner styles */
+
+.banner-container {
+  display: flex;
+  gap: 130px;
+}
+
+.banner-container .description {
+  padding: 16px 0;
+}
+
+.banner-title {
+  font-size: 3.1rem;
+}
+.banner-container .image {
+  background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.banner-img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.hide {
+  display: none;
 }
